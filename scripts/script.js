@@ -5,6 +5,6 @@
 //   document.body.classList.toggle('expand')
 // }
 
-function darkmode() {
-  document.body.style.background = 'white';
+function test() {
+  document.body.style.background = 'black';
 }
