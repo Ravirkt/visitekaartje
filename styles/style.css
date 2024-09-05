@@ -7,13 +7,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 article {
   overflow: hidden;
   max-width: 700px;
   width: 100%;
-  box-shadow: 4px 7px 7px 4px rgb(134, 135, 151);
+  box-shadow: 0px 0px 15px 4px rgb(61, 61, 62);
 }
 
 .mugshot {
@@ -33,9 +34,8 @@ article {
   filter: none;
 }
 
-.info {
-  background-color: #6a896c;
-  background-image: linear-gradient(-40deg, #076425, rgb(58, 64, 169));
+#info {
+  background-image: linear-gradient(-40deg, #ddd72b, rgb(29, 64, 66));
   color: #ffffff;
   height: 350px;
   width: 400px;
@@ -45,29 +45,29 @@ article {
   justify-content: center;
 }
 
-.info h1 {
+#info h1 {
   margin: 0;
   font-size: 2em;
 }
 
-.info h2 {
+#info h2 {
   margin-top: 10px;
   font-size: 1.5em;
   font-weight: lighter;
 }
 
-.info h3 {
+#info h3 {
   margin-top: 20px;
   font-size: 1.2em;
   font-weight: lighter;
 }
 
-.info ul {
+#info ul {
   list-style-type: none;
   padding: 0;
 }
 
-.info li {
+#info li {
   margin-top: 5px;
   font-size: 1em;
 }
@@ -105,11 +105,52 @@ article {
     opacity: 1;
   }
 }
-.test {
 
-  width: 20px;
-  height: 30px;
-  color: aqua;
-  justify-content: left;  
+.button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-  
+
+.button button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-image: linear-gradient(-40deg, #ddd72b, rgb(29, 64, 66));
+  color: rgb(79, 79, 79);
+  border: none;
+  border-radius: 5px;
+}
+
+.button button:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Dark mode dingentjes */
+
+.dark-mode {
+  background-color: #000000;
+}
+
+.dark-mode article {
+  box-shadow: 0px 0px 55px 2px rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode #info {
+  background-image: linear-gradient(-40deg, #202020, rgb(2, 2, 16));
+  color: #6b6b6b;
+}
+
+.dark-mode img {
+  filter: grayscale(100%) brightness(50%);
+}
+
+.dark-mode button {
+  background-image: linear-gradient(-40deg, #272727, rgb(2, 2, 16));
+}
+.dark-mode button:hover {
+  color: white;
+}
