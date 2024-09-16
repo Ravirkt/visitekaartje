@@ -3,7 +3,9 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex; /* Display: flex;
+                    Als je deze property gebruikt maak van flexbox. Hiermee kun je de uitlijning en positie van elementen in die flexbox
+                    verdelen op de pagina. Dit maakt de het element ook responsive https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox */
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -41,7 +43,8 @@ article {
   width: 400px;
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Hiermee kun je de richting bepalen van de elementen in de flexbox.
+                             dit kan horizontaal of verticaal zijn */
   justify-content: center;
 }
 
@@ -122,7 +125,8 @@ article {
   background-image: linear-gradient(-40deg, #ddd72b, rgb(29, 64, 66));
   color: rgb(79, 79, 79);
   border: none;
-  border-radius: 5px;
+  border-radius: 5px; /* Hiermee kun je de radius van de hoeken van een border wijzigigen. je kunt de hoeken 
+                         een ronding geven.  https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
 }
 
 .button button:hover {

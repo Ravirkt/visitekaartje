@@ -46,6 +46,7 @@ const button1 = document.getElementById("button1");
 const body = document.body;
 
 button1.addEventListener("click", function() {
-body.classList.toggle("dark-mode");
+  console.log('er is geklikt')
+// body.classList.toggle("dark-mode");
   
 });
